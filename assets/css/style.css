@@ -9,7 +9,7 @@
 
 nav{
     background: #ffffff;
-    height: 90px;
+    height: 70px;
     width: 100%;
 }
 .enlace{
@@ -17,7 +17,7 @@ nav{
     padding: 10px 50px;
 }
 .logo{
-    height: 70px;
+    height: 80px;
 }
 nav ul{
     float: right;
@@ -31,7 +31,7 @@ nav ul li{
 nav ul li a{
     color: #14BC51;
     font-size: 18px;
-    padding: 7px 13px;
+    padding: 10px 13px;
     border-radius: 3px;
     
 }
@@ -41,3 +41,84 @@ li a.active, li a:hover{
     transition: .5s;
     color: #ffffff;
 }
+
+.contenedor
+{
+    display: flex;
+    margin-top: 100px;
+    background-color: darkgray;
+    padding: 25px;
+}
+
+.image
+{
+    width: 500px;
+    height: 400px;
+    
+}
+
+.text
+{
+    padding-left: 25px;
+    font-size: 28px;
+    
+}
+
+
+/*Codigo del Footer*/
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: darkgray;
+  }
+  footer .content{
+    max-width: 1350px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  footer .content p,a{
+    color: #fff;
+  }
+  footer .content .box{
+    width: 33%;
+    transition: all 0.4s ease;
+  }
+  footer .content .topic{
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 16px;
+  
+  }
+  footer .content p{
+    text-align: justify;
+  }
+  
+  footer .content .middle{
+    padding-left: 80px;
+  }
+  footer .content .middle a{
+    line-height: 32px;
+  }
+
+  footer .bottom{
+    width: 100%;
+    text-align: right;
+    color: #d9d9d9;
+    padding: 0 40px 5px 0;
+  }
+  footer .bottom a{
+    color: #14BC51;
+  }
+  footer a{
+    transition: all 0.3s ease;
+  }
+  footer a:hover{
+    color: #14BC51;
+  }
+  
