@@ -150,6 +150,59 @@ li a.active, li a:hover{
 }
 /*Fin Cards*/
 
+main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+
+section
+{
+    background: #14BC51;
+    color: #fff;
+    width: 300px;
+    margin: 10px;
+}
+
+.header
+{
+    margin: 0px;
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.one
+{
+    background: #66CBFF;
+}
+
+.two
+{
+    background: #ff9800;
+}
+
+.three
+{
+    background: #f44336;
+}
+
+.cash span
+{
+    display: block;
+    font-size: 40px;
+}
+
+.ul-card li
+{
+    list-style-type: none;
+    text-align: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 18px;
+}
 
 /*Fin del contenido de la pagina*/
 
