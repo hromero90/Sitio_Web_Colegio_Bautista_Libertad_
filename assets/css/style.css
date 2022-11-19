@@ -5,7 +5,10 @@
     list-style: none;
     box-sizing: border-box;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+*{
+  font-family: 'Roboto Mono', monospace;
+}
 
 nav{
     background: #ffffff;
@@ -48,8 +51,8 @@ li a.active, li a:hover{
     display: flex;
     margin-top: 50px;
     margin-bottom: 40px;
-    background-color: darkgray;
-    padding: 25px;
+    background-color: rgb(243, 243, 243);
+    padding: 18px;
 }
 .image
 {
