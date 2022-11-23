@@ -5,7 +5,10 @@
     list-style: none;
     box-sizing: border-box;
 }
-
+p
+{
+    text-align: justify;
+}
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 *{
     font-family: 'Satisfy', cursive;
@@ -58,7 +61,8 @@ li a.active, li a:hover{
 .image
 {
     width: 500px;
-    height: 400px; 
+    height: 400px;
+    padding-left: 50px;
 }
 
 .image_infra
