@@ -453,10 +453,16 @@ section
     color: #00c702;
   }
   
-  /* Animação Hover */
+  /* Animacion Hover */
   .card:hover {
     transform: scale3d(1.1, 1.1, 1);
   }
+
+
+  /*Slider de las modalidades*/
+
+  
+  /*Fin del slider de las modalidades*/
   
 
 /*Fin del contenido de la pagina*/
