@@ -8,6 +8,7 @@
 p
 {
     text-align: justify;
+    
 }
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 *{
@@ -53,21 +54,24 @@ li a.active, li a:hover{
 .contenedor
 {
     display: flex;
-    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
     margin-bottom: 40px;
     background-color: rgb(255, 255, 255);
-    padding: 18px;
+      
 }
 .image
 {
-    width: 500px;
+    width: 650px;
     height: 400px;
     padding-left: 50px;
+    
 }
 
 .image_infra
 {
-    width: 200px;
+    width: 350px;
     height: 350px;
     padding-left: 18px;
 }
@@ -75,7 +79,8 @@ li a.active, li a:hover{
 .text
 {
     padding-left: 22px;
-    font-size: 22px;
+    font-size: 18px;
+    
 }
 
 .titulo
@@ -125,7 +130,8 @@ h1::after
     display: flex;
     padding-right: 10px;
     padding-left: 10px;
-    font-size: 22px;
+    font-size: 18px;
+    
 }
 
 /*Cards*/
