@@ -5,6 +5,15 @@
     list-style: none;
     box-sizing: border-box;
 }
+
+#scrollUp {
+    background-image: url("../../assets/img/up-arrow.png");
+    bottom: 20px;
+    right: 20px;
+    width: 32px;    /* Width of image */
+    height: 32px;   /* Height of image */
+}
+
 p
 {
     text-align: justify;
@@ -17,8 +26,9 @@ p
 
 nav{
     background: #ffffff;
-    height: 70px;
+    height: 80px;
     width: 100%;
+    box-shadow: 2px 2px 10px;
 }
 .enlace{
     position: absolute;
@@ -26,6 +36,7 @@ nav{
 }
 .logo{
     height: 80px;
+    padding-bottom: 15px;
 }
 nav ul{
     float: right;
@@ -65,8 +76,18 @@ li a.active, li a:hover{
 {
     width: 650px;
     height: 400px;
-    padding-left: 50px;
-    
+    margin-left: 50px;
+    margin-right: 50px;
+    box-shadow: 0 0 30px; 
+}
+
+.image-mod
+{
+    width: 650px;
+    height: 400px;
+    margin-left: 10px;
+    margin-right: 25px;
+    box-shadow: 0 0 30px; 
 }
 
 .image_infra
@@ -78,9 +99,9 @@ li a.active, li a:hover{
 
 .text
 {
-    padding-left: 22px;
+    padding-left: 50px;
+    padding-right: 50px;
     font-size: 18px;
-    
 }
 
 .titulo
@@ -128,8 +149,8 @@ h1::after
 .text-dos
 {
     display: flex;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 40px;
+    padding-left: 40px;
     font-size: 18px;
     
 }
