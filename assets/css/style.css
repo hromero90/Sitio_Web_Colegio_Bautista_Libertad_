@@ -526,14 +526,14 @@ section
 /*Formulario de informacion de aranceles*/
 .form-register {
     width: 700px;
-    background: #24303c;
+    background: #ffffff;
     padding: 30px;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 4px;
     font-family: 'calibri';
-    color: white;
+    color: #0396FF;
     box-shadow: 7px 13px 37px #000;
   }
   
