@@ -10,6 +10,19 @@
     <link href="assets/img/logo_cbl.png" rel="icon">
 
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"/>
+    <!--Plugin para poner un boton de ir a inicio-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="assets/plugin/jquery.scrollUp.js"></script>
+    <script>
+        $(function(){
+            $.scrollUp(
+                {
+                    scrollImg: true
+        });
+        });
+    </script>
 </head>
 <body>
     <!--Encabezado-->
@@ -20,7 +33,7 @@
         </a>
         <ul>
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="fuerza_laboral.html">Fuerza Laboral</a></li>
+            <li><a href="fuerza_laboral.html">Comunidad Educativa</a></li>
             <li><a href="infraestructura.html">Infraestructura</a></li>
             <li><a href="modalidades.html">Modalidades</a></li>
             <li><a href="aranceles.html">Aranceles</a></li>
@@ -28,6 +41,70 @@
             <li><a href="aulavirtual.html">Aula Virtual</a></li>
         </ul>
     </nav>
+
+
+    <!--Formulario de Ingreso al sistema-->
+    
+	<div class="caja-sistem">
+        <img src="assets/img/logo_cbl.png" alt="">
+    </div>
+    
+    <h5>Bienvenidos al Sistema de Registro de Matricula</h5>
+    <h5>Para Iniciar Sesion por favor haga click en el boton Entrar</h5>
+	<div class="box-sistem">
+		<a class="button-sistem" href="#divOne">Entrar</a>
+	</div>
+	<div class="overlay" id="divOne">
+		<div class="wrapper">
+			<h2>Por favor ingrese sus datos</h2><a class="close" href="#">&times;</a>
+			<div class="content-sistem">
+				<div class="container-sistem">
+					<form>
+						<label>Usuario</label>
+						<input placeholder="Escriba su usuario..." type="text">
+						<label>Usuario</label>
+						<input placeholder="Escriba su contraseña" type="text">
+						
+						<input type="submit" value="Iniciar Sesion">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+    <!--Inicio del Footer-->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+           
+            <div class="box">
+                <h2>Colegio Bautista Libertad</h2>
+                <p>Barrio Grenada<br>
+                <br>Centro Comercial Managua 1c arriba 1/2c al sur<br>
+                <br>Managua Nicaragua</p>
+                <p>Celular: 2270-5587 / 8403-5550 / 8279-4585 <br>
+                <br>Correo Electronico: </p>
+            </div>
+
+            <div class="box">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.888552064658!2d-86.24855328536407!3d12.119777291418712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f73fe19e206a1a9%3A0xee504fc0b55cde55!2sColegio%20Bautista%20Libertad!5e0!3m2!1ses!2sni!4v1668744184839!5m2!1ses!2sni" width="430" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="box">
+                <h2>Siguenos</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2022 <b>Escuela Bautista Libertad</b> - Un Ministerio de la Iglesia Bautista Libertad.</small>
+        </div>
+    </footer> 
+    <!--Fin del Footer-->
+    
     
 </body>
 </html>
