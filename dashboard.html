@@ -55,48 +55,68 @@
         <form action="#">
             <div class="form first">
                 <div class="details personal">
-                    <span class="title">Personal Details</span>
+                    <span class="title">Datos del Estudiante</span>
 
                     <div class="fields">
                         <div class="input-field">
-                            <label>Full Name</label>
-                            <input type="text" placeholder="Enter your name" required>
+                            <label>Nombres</label>
+                            <input type="text" placeholder="Ingrese dos nombres" required>
                         </div>
 
                         <div class="input-field">
-                            <label>Date of Birth</label>
-                            <input type="date" placeholder="Enter birth date" required>
+                            <label>Apellidos</label>
+                            <input type="text" placeholder="Ingrese dos apellidos" required>
                         </div>
 
                         <div class="input-field">
-                            <label>Email</label>
-                            <input type="text" placeholder="Enter your email" required>
+                            <label>Edad</label>
+                            <input type="date" placeholder="Ingrese la edad" required>
                         </div>
 
                         <div class="input-field">
-                            <label>Mobile Number</label>
-                            <input type="number" placeholder="Enter mobile number" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Gender</label>
+                            <label>Sexo</label>
                             <select required>
-                                <option disabled selected>Select gender</option>
-                                <option>Male</option>
-                                <option>Female</option>
-                                <option>Others</option>
+                                <option disabled selected>Seleccionar</option>
+                                <option>Masculino</option>
+                                <option>Femenino</option>
                             </select>
                         </div>
 
                         <div class="input-field">
-                            <label>Occupation</label>
-                            <input type="text" placeholder="Enter your ccupation" required>
+                            <label>Grado</label>
+                            <select required>
+                                <option disabled selected>Seleccionar</option>
+                                <option>II Nivel</option>
+                                <option>III Nivel</option>
+                                <option>Primer Grado</option>
+                                <option>Segundo Grado</option>
+                                <option>Tercero Grado</option>
+                                <option>Cuarto Grado</option>
+                                <option>Quinto Grado</option>
+                                <option>Sexto Grado</option>
+                                <option>Septimo Grado</option>
+                                <option>Octavo Grado</option>
+                                <option>Noveno Grado</option>
+                                <option>Décimo Grado</option>
+                                <option>Undécimo Grado</option>
+
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Dirección Domiciliar</label>
+                            <input type="text" placeholder="Ingresa la dirección" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Teléfono</label>
+                            <input type="number" placeholder="Ingresa número de celular" required>
                         </div>
                     </div>
                 </div>
 
                 <div class="details ID">
-                    <span class="title">Identity Details</span>
+                    <span class="title">Datos del Tutor</span>
 
                     <div class="fields">
                         <div class="input-field">
@@ -131,11 +151,12 @@
                     </div>
 
                     <button class="nextBtn">
-                        <span class="btnText">Guardar</span>
+                        <span class="btnText">Siguiente =></span>
                         <i class="uil uil-navigator"></i>
                     </button>
                 </div> 
             </div>
+
 
             <div class="form second">
                 <div class="details address">
@@ -226,6 +247,11 @@
     </div>
       
 
+    <script src="script.js"></script>
+
+
+
+    <!--Listado de Estudiantes Guardados-->
       <section class="attendance">
         <div class="attendance-list">
           <h1>Últimos estudiantes agregados</h1>
