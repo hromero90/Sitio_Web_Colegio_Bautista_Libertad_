@@ -16,25 +16,18 @@
           <span class="nav-item">Admin</span>
         </a></li>
         <li><a href="#">
-          <i class="fas fa-menorah"></i>
-          <span class="nav-item">Dashboard</span>
+          <i class='fas fa-address-card'></i>
+          <span class="nav-item">Matricula</span>
         </a></li>
         <li><a href="#">
-          <i class="fas fa-comment"></i>
-          <span class="nav-item">Message</span>
+          <i class='fas fa-search'></i>
+          <span class="nav-item">Busqueda</span>
         </a></li>
         <li><a href="#">
           <i class="fas fa-database"></i>
-          <span class="nav-item">Report</span>
+          <span class="nav-item">Reportes</span>
         </a></li>
-        <li><a href="#">
-          <i class="fas fa-chart-bar"></i>
-          <span class="nav-item">Attendance</span>
-        </a></li>
-        <li><a href="#">
-          <i class="fas fa-cog"></i>
-          <span class="nav-item">Setting</span>
-        </a></li>
+        
 
         <li><a href="registro.html" class="logout">
           <i class="fas fa-sign-out-alt"></i>
@@ -50,7 +43,7 @@
       </div>
 
       <div class="container-formulario">
-        <header>Registrar Estdiante</header>
+        <header>Registrar Estudiante</header>
 
         <form action="#">
             <div class="form first">
@@ -60,17 +53,17 @@
                     <div class="fields">
                         <div class="input-field">
                             <label>Nombres</label>
-                            <input type="text" placeholder="Ingrese dos nombres" required>
+                            <input type="text" placeholder="Nombres..." required>
                         </div>
 
                         <div class="input-field">
                             <label>Apellidos</label>
-                            <input type="text" placeholder="Ingrese dos apellidos" required>
+                            <input type="text" placeholder="Apellidos..." required>
                         </div>
 
                         <div class="input-field">
                             <label>Edad</label>
-                            <input type="date" placeholder="Ingrese la edad" required>
+                            <input type="number" placeholder="Edad..." required>
                         </div>
 
                         <div class="input-field">
@@ -105,12 +98,12 @@
 
                         <div class="input-field">
                             <label>Dirección Domiciliar</label>
-                            <input type="text" placeholder="Ingresa la dirección" required>
+                            <input type="text" placeholder="Dirección..." required>
                         </div>
 
                         <div class="input-field">
                             <label>Teléfono</label>
-                            <input type="number" placeholder="Ingresa número de celular" required>
+                            <input type="number" placeholder="Celular..." required>
                         </div>
                     </div>
                 </div>
@@ -120,34 +113,34 @@
 
                     <div class="fields">
                         <div class="input-field">
-                            <label>ID Type</label>
-                            <input type="text" placeholder="Enter ID type" required>
+                            <label>Nombres</label>
+                            <input type="text" placeholder="Nombres..." required>
                         </div>
 
                         <div class="input-field">
-                            <label>ID Number</label>
-                            <input type="number" placeholder="Enter ID number" required>
+                            <label>Apellidos</label>
+                            <input type="text" placeholder="Apellidos..." required>
                         </div>
 
                         <div class="input-field">
-                            <label>Issued Authority</label>
-                            <input type="text" placeholder="Enter issued authority" required>
+                            <label>Cedula</label>
+                            <input type="text" placeholder="Cedula..." required>
                         </div>
 
                         <div class="input-field">
-                            <label>Issued State</label>
-                            <input type="text" placeholder="Enter issued state" required>
+                            <label>Dirección</label>
+                            <input type="text" placeholder="Dirección..." required>
                         </div>
 
                         <div class="input-field">
-                            <label>Issued Date</label>
-                            <input type="date" placeholder="Enter your issued date" required>
+                            <label>Telefono</label>
+                            <input type="number" placeholder="Telefono..." required>
                         </div>
 
                         <div class="input-field">
-                            <label>Expiry Date</label>
-                            <input type="date" placeholder="Enter expiry date" required>
-                        </div>
+                          <label>Parentesco</label>
+                          <input type="text" placeholder="Telefono..." required>
+                      </div>
                     </div>
 
                     <button class="nextBtn">
@@ -160,84 +153,95 @@
 
             <div class="form second">
                 <div class="details address">
-                    <span class="title">Address Details</span>
+                    <span class="title">Registrar Docente</span>
 
                     <div class="fields">
+                      <div class="input-field">
+                        <label>Nombres</label>
+                        <input type="text" placeholder="Nombres..." required>
+                    </div>
+
+                    <div class="input-field">
+                        <label>Apellidos</label>
+                        <input type="text" placeholder="Apellidos..." required>
+                    </div>
+
+                    <div class="input-field">
+                      <label>Telefono</label>
+                      <input type="number" placeholder="Telefono..." required>
+                  </div>
+
                         <div class="input-field">
-                            <label>Address Type</label>
-                            <input type="text" placeholder="Permanent or Temporary" required>
+                            <label>Correo Electronico</label>
+                            <input type="email" placeholder="Correo Electronico" required>
                         </div>
 
                         <div class="input-field">
-                            <label>Nationality</label>
-                            <input type="text" placeholder="Enter nationality" required>
+                            <label>INSS</label>
+                            <input type="number" placeholder="Número de INSS">
                         </div>
 
                         <div class="input-field">
-                            <label>State</label>
-                            <input type="text" placeholder="Enter your state" required>
-                        </div>
+                          <label>Modalidad que Imparte / Grado</label>
+                          <select required>
+                              <option disabled selected>Seleccionar</option>
+                              <option>II Nivel</option>
+                              <option>III Nivel</option>
+                              <option>Primer Grado</option>
+                              <option>Segundo Grado</option>
+                              <option>Tercero Grado</option>
+                              <option>Cuarto Grado</option>
+                              <option>Quinto Grado</option>
+                              <option>Sexto Grado</option>
+                              <option>Septimo Grado</option>
+                              <option>Octavo Grado</option>
+                              <option>Noveno Grado</option>
+                              <option>Décimo Grado</option>
+                              <option>Undécimo Grado</option>
 
-                        <div class="input-field">
-                            <label>District</label>
-                            <input type="text" placeholder="Enter your district" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Block Number</label>
-                            <input type="number" placeholder="Enter block number" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Ward Number</label>
-                            <input type="number" placeholder="Enter ward number" required>
-                        </div>
+                          </select>
+                      </div>
                     </div>
                 </div>
 
                 <div class="details family">
-                    <span class="title">Family Details</span>
+                    <span class="title">Datos de Matricula</span>
 
                     <div class="fields">
-                        <div class="input-field">
-                            <label>Father Name</label>
-                            <input type="text" placeholder="Enter father name" required>
-                        </div>
+                      <div class="input-field">
+                        <label>Repitente</label>
+                        <select required>
+                            <option disabled selected>Seleccionar</option>
+                            <option>Si</option>
+                            <option>No</option>
+                        </select>
+                    </div>
+
+                    <div class="input-field">
+                      <label>Nuevo Ingreso</label>
+                      <select required>
+                          <option disabled selected>Seleccionar</option>
+                          <option>Si</option>
+                          <option>No</option>
+                      </select>
+                  </div>
 
                         <div class="input-field">
-                            <label>Mother Name</label>
-                            <input type="text" placeholder="Enter mother name" required>
-                        </div>
+                          <label>Año Lectivo</label>
+                          <input type="number" placeholder="Año lectivo..." required>
+                      </div>
 
-                        <div class="input-field">
-                            <label>Grandfather</label>
-                            <input type="text" placeholder="Enter grandfther name" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Spouse Name</label>
-                            <input type="text" placeholder="Enter spouse name" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Father in Law</label>
-                            <input type="text" placeholder="Father in law name" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Mother in Law</label>
-                            <input type="text" placeholder="Mother in law name" required>
-                        </div>
+                        
                     </div>
 
                     <div class="buttons">
                         <div class="backBtn">
                             <i class="uil uil-navigator"></i>
-                            <span class="btnText">Back</span>
+                            <span class="btnText">Atras</span>
                         </div>
                         
                         <button class="sumbit">
-                            <span class="btnText">Submit</span>
+                            <span class="btnText">Guardar</span>
                             <i class="uil uil-navigator"></i>
                         </button>
                     </div>
@@ -258,70 +262,43 @@
           <table class="table">
             <thead>
               <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Depart</th>
-                <th>Date</th>
-                <th>Join Time</th>
-                <th>Logout Time</th>
-                <th>Details</th>
+                <th>Código Estudiante</th>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Edad</th>
+                <th>Sexo</th>
+                <th>Grado</th>
+                <th>Acciones</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr  class="active">
                 <td>01</td>
                 <td>Sam David</td>
                 <td>Design</td>
                 <td>03-24-22</td>
                 <td>8:00AM</td>
                 <td>3:00PM</td>
-                <td><button>View</button></td>
+                <td><button>Actualizar</button> 
+                  <button>Eliminar</button>
+                </button>
+              </td>
+                
               </tr>
-              <tr class="active">
+              <tr>
                 <td>02</td>
                 <td>Balbina Kherr</td>
                 <td>Coding</td>
                 <td>03-24-22</td>
                 <td>9:00AM</td>
                 <td>4:00PM</td>
-                <td><button>View</button></td>
+                <td><button>Actualizar</button> 
+                  <button>Eliminar</button>
+                </button>
+              </td>
               </tr>
-              <tr>
-                <td>03</td>
-                <td>Badan John</td>
-                <td>testing</td>
-                <td>03-24-22</td>
-                <td>8:00AM</td>
-                <td>3:00PM</td>
-                <td><button>View</button></td>
-              </tr>
-              <tr>
-                <td>04</td>
-                <td>Sara David</td>
-                <td>Design</td>
-                <td>03-24-22</td>
-                <td>8:00AM</td>
-                <td>3:00PM</td>
-                <td><button>View</button></td>
-              </tr>
-              <!-- <tr >
-                <td>05</td>
-                <td>Salina</td>
-                <td>Coding</td>
-                <td>03-24-22</td>
-                <td>9:00AM</td>
-                <td>4:00PM</td>
-                <td><button>View</button></td>
-              </tr>
-              <tr >
-                <td>06</td>
-                <td>Tara Smith</td>
-                <td>Testing</td>
-                <td>03-24-22</td>
-                <td>9:00AM</td>
-                <td>4:00PM</td>
-                <td><button>View</button></td>
-              </tr> -->
+              
+              
             </tbody>
           </table>
         </div>

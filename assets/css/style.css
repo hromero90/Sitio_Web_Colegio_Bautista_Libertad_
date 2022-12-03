@@ -72,7 +72,7 @@ li a.active, li a:hover{
     margin-top: 40px;
     margin-bottom: 40px;
     background-color: rgb(255, 255, 255);
-      
+    width: 100%;  
 }
 .image
 {
@@ -822,6 +822,24 @@ input[type=text], select, textarea {
     }
 }
 
-@media screen and (min-width:600px){
-    
+@media screen and (max-width:600px){
+    nav{
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .logo
+    {
+        display: none;
+    }
+
+    .titulo
+    {
+        flex-direction: column;
+    }
+    .contenedor
+    {
+        flex-direction: column;
+        width: 100%;
+    }
 }
