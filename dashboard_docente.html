@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sistema de Matricula Colegio Bautista Libertad</title>
+  <link rel="stylesheet" href="assets/css/styledash.css" />
+  <!-- Font Awesome Cdn Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="#" class="logo">
+          <img src="assets/img/logo_cbl.png">
+          <span class="nav-item">Admin</span>
+        </a></li>
+        <li><a href="#">
+          <i class='fas fa-chalkboard-teacher'></i>
+          <span class="nav-item">Registrar Docente</span>
+        </a></li>
+        <li><a href="dashboard.html">     
+          <i class='fas fa-address-card'></i>
+          <span class="nav-item">Registrar Estudiante</span>
+        </a></li>
+        <li><a href="#">
+          <i class="fas fa-database"></i>
+          <span class="nav-item">Reportes</span>
+        </a></li>
+        
+
+        <li><a href="registro.html" class="logout">
+          <i class="fas fa-sign-out-alt"></i>
+          <span class="nav-item">Cerrar Sesión</span>
+        </a></li>
+      </ul>
+    </nav>
+
+    <section class="main">
+      <div class="main-top">
+        <h1>Sistema de Matricula Colegio Bautista Libertad</h1>
+        
+      </div>
+
+      <div class="container-formulario">
+        <header>Registrar Docente</header>
+
+        <form action="#">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Datos del Docente</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Nombres</label>
+                            <input type="text" placeholder="Nombres..." required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Apellidos</label>
+                            <input type="text" placeholder="Apellidos..." required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Edad</label>
+                            <input type="number" placeholder="Edad..." required>
+                        </div>
+
+                        <div class="input-field">
+                          <label>Correo</label>
+                          <input type="email" placeholder="Correo..." required>
+                      </div>
+
+                      <div class="input-field">
+                        <label>INSS</label>
+                        <input type="number" placeholder="INSS...">
+                    </div>
+
+                        <div class="input-field">
+                            <label>Sexo</label>
+                            <select required>
+                                <option disabled selected>Seleccionar</option>
+                                <option>Masculino</option>
+                                <option>Femenino</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Grado que imparte</label>
+                            <select required>
+                                <option disabled selected>Seleccionar</option>
+                                <option>II Nivel</option>
+                                <option>III Nivel</option>
+                                <option>Primer Grado</option>
+                                <option>Segundo Grado</option>
+                                <option>Tercero Grado</option>
+                                <option>Cuarto Grado</option>
+                                <option>Quinto Grado</option>
+                                <option>Sexto Grado</option>
+                                <option>Septimo Grado</option>
+                                <option>Octavo Grado</option>
+                                <option>Noveno Grado</option>
+                                <option>Décimo Grado</option>
+                                <option>Undécimo Grado</option>
+
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Codigo del Docente</label>
+                            <input type="text" placeholder="01-LAGH..." required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Teléfono</label>
+                            <input type="number" placeholder="Teléfono..." required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                  <button class="sumbit">
+                      <span class="btnText">Guardar</span>
+                      <i class="uil uil-navigator"></i>
+                  </button>
+              </div>
+            </div>
+        </form>
+    </div>
+      
+
+    <script src="script.js"></script>
+
+
+    <!--Boton de busqueda-->
+    <div class="input-box">
+      <i class="uil uil-search"></i>
+      <input type="text" placeholder="Ingrese el código del docente..." />
+      <button class="button">Buscar</button>
+    </div>
+    <!--Listado de Docentes Guardados-->
+      <section class="attendance">
+        <div class="attendance-list">
+          <h1>Últimos docentes agregados</h1>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Código Docente</th>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Edad</th>
+                <th>Sexo</th>
+                <th>Grado</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr  class="active">
+                <td>01 - LAGH</td>
+                <td>Larry Alberto</td>
+                <td>Gutierrez Hurtado</td>
+                <td>35</td>
+                <td>Masculino</td>
+                <td>Noveno</td>
+                <td><button>Actualizar</button> 
+                  <button>Eliminar</button>
+                </button>
+              </td>
+                
+              </tr>
+              <tr>
+                <td>02 - CMJS</td>
+                <td>Carmen Manuela</td>
+                <td>Jara Sánchez</td>
+                <td>43</td>
+                <td>Femenino</td>
+                <td>Décimo</td>
+                <td><button>Actualizar</button> 
+                  <button>Eliminar</button>
+                </button>
+              </td>
+              </tr>
+              
+              
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+  </div>
+
+</body>
+</html>

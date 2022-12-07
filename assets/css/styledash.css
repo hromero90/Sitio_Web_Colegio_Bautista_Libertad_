@@ -18,14 +18,14 @@ nav{
   bottom: 0;
   height: 100vh;
   left: 0;
-  width: 90px;
+  width: 150px;
   /* width: 280px; */
   background: #fff;
   overflow: hidden;
   transition: 1s;
 }
 nav:hover{
-  width: 280px;
+  width: 600px;
   transition: 1s;
 }
 .logo{
@@ -86,12 +86,15 @@ a:hover i{
 /* MAin Section */
 .main{
   position: relative;
-  padding: 20px;
-  width: 100%;
+  padding: 60px;
+  width: 150%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .main-top{
   display: flex;
   width: 100%;
+  margin-left: 18%;
 }
 .main-top i{
   position: absolute;
@@ -153,8 +156,77 @@ a:hover i{
   transition: 0.5s;
 }
 
+/*Boton de busqueda*/
+
+.input-box {
+  position: relative;
+  height: 76px;
+  max-width: 900px;
+  width: 120%;
+  background: #fff;
+  margin: 0 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.input-box i,
+.input-box .button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.input-box i {
+  left: 20px;
+  font-size: 30px;
+  color: #707070;
+}
+.input-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  padding: 0 155px 0 65px;
+  background-color: transparent;
+}
+.input-box .button {
+  right: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  background-color: #4070f4;
+  cursor: pointer;
+}
+.input-box .button:active {
+  transform: translateY(-50%) scale(0.98);
+}
+
+/* Responsive */
+@media screen and (max-width: 500px) {
+  .input-box {
+    height: 66px;
+    margin: 0 8px;
+  }
+  .input-box i {
+    left: 12px;
+    font-size: 25px;
+  }
+  .input-box input {
+    padding: 0 112px 0 50px;
+  }
+  .input-box .button {
+    right: 12px;
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+}
+
 /*Attendance List serction  */
 .attendance{
+  
   margin-top: 20px;
   text-transform: capitalize;
 }

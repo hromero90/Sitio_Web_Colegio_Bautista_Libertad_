@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <title>Sistema de Matricula Colegio Bautista Libertad</title>
   <link rel="stylesheet" href="assets/css/styledash.css" />
+  <link rel="stylesheet" href="assets/css/style-search.css">
   <!-- Font Awesome Cdn Link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
 </head>
@@ -15,13 +16,13 @@
           <img src="assets/img/logo_cbl.png">
           <span class="nav-item">Admin</span>
         </a></li>
-        <li><a href="#">
-          <i class='fas fa-address-card'></i>
-          <span class="nav-item">Matricula</span>
+        <li><a href="dashboard_docente.html">
+          <i class='fas fa-chalkboard-teacher'></i>
+          <span class="nav-item">Registrar Docente</span>
         </a></li>
-        <li><a href="#">
-          <i class='fas fa-search'></i>
-          <span class="nav-item">Busqueda</span>
+        <li><a href="#">          
+          <i class='fas fa-address-card'></i>
+          <span class="nav-item">Registrar Estudiante</span>
         </a></li>
         <li><a href="#">
           <i class="fas fa-database"></i>
@@ -39,7 +40,6 @@
     <section class="main">
       <div class="main-top">
         <h1>Sistema de Matricula Colegio Bautista Libertad</h1>
-        <i class="fas fa-user-cog"></i>
       </div>
 
       <div class="container-formulario">
@@ -105,6 +105,12 @@
                             <label>Teléfono</label>
                             <input type="number" placeholder="Celular..." required>
                         </div>
+
+                        <div class="input-field">
+                          <label>Código del Estudiante</label>
+                          <input type="number" placeholder="01-AYBR..." required>
+                      </div>
+
                     </div>
                 </div>
 
@@ -139,7 +145,7 @@
 
                         <div class="input-field">
                           <label>Parentesco</label>
-                          <input type="text" placeholder="Telefono..." required>
+                          <input type="text" placeholder="Parentesco..." required>
                       </div>
                     </div>
 
@@ -153,56 +159,24 @@
 
             <div class="form second">
                 <div class="details address">
-                    <span class="title">Registrar Docente</span>
-
-                    <div class="fields">
-                      <div class="input-field">
-                        <label>Nombres</label>
-                        <input type="text" placeholder="Nombres..." required>
-                    </div>
+                    <span class="title">Datos del Docente</span>
 
                     <div class="input-field">
-                        <label>Apellidos</label>
-                        <input type="text" placeholder="Apellidos..." required>
-                    </div>
+                      <label>Docente</label>
+                      <select required>
+                          <option disabled selected>Seleccionar</option>
+                          <option>Juan Perez</option>
+                          <option>Juana Marenco</option>
+                          <option>Gabriel Hernández</option>
+                          <option>Pedro García</option>
+                          <option>Jennifer Pereira</option>
+                          <option>Maria Porta</option>
+                          <option>Esmeralda Carrion</option>
+                          <option>Valeska Parra</option>
 
-                    <div class="input-field">
-                      <label>Telefono</label>
-                      <input type="number" placeholder="Telefono..." required>
+                      </select>
                   </div>
 
-                        <div class="input-field">
-                            <label>Correo Electronico</label>
-                            <input type="email" placeholder="Correo Electronico" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>INSS</label>
-                            <input type="number" placeholder="Número de INSS">
-                        </div>
-
-                        <div class="input-field">
-                          <label>Modalidad que Imparte / Grado</label>
-                          <select required>
-                              <option disabled selected>Seleccionar</option>
-                              <option>II Nivel</option>
-                              <option>III Nivel</option>
-                              <option>Primer Grado</option>
-                              <option>Segundo Grado</option>
-                              <option>Tercero Grado</option>
-                              <option>Cuarto Grado</option>
-                              <option>Quinto Grado</option>
-                              <option>Sexto Grado</option>
-                              <option>Septimo Grado</option>
-                              <option>Octavo Grado</option>
-                              <option>Noveno Grado</option>
-                              <option>Décimo Grado</option>
-                              <option>Undécimo Grado</option>
-
-                          </select>
-                      </div>
-                    </div>
-                </div>
 
                 <div class="details family">
                     <span class="title">Datos de Matricula</span>
@@ -254,6 +228,12 @@
     <script src="script.js"></script>
 
 
+    <!--Boton de busqueda-->
+    <div class="input-box">
+      <i class="uil uil-search"></i>
+      <input type="text" placeholder="Ingrese el código del estudiante..." />
+      <button class="button">Buscar</button>
+    </div>
 
     <!--Listado de Estudiantes Guardados-->
       <section class="attendance">
@@ -273,12 +253,12 @@
             </thead>
             <tbody>
               <tr  class="active">
-                <td>01</td>
-                <td>Sam David</td>
-                <td>Design</td>
-                <td>03-24-22</td>
-                <td>8:00AM</td>
-                <td>3:00PM</td>
+                <td>01 - AYBR</td>
+                <td>Ana Yancy</td>
+                <td>Bermúdez Ramos</td>
+                <td>14</td>
+                <td>Femenino</td>
+                <td>Séptimo</td>
                 <td><button>Actualizar</button> 
                   <button>Eliminar</button>
                 </button>
@@ -286,12 +266,12 @@
                 
               </tr>
               <tr>
-                <td>02</td>
-                <td>Balbina Kherr</td>
-                <td>Coding</td>
-                <td>03-24-22</td>
-                <td>9:00AM</td>
-                <td>4:00PM</td>
+                <td>02 - XDSM</td>
+                <td>Xochilt del Socorro</td>
+                <td>Silva Mora</td>
+                <td>14</td>
+                <td>Femenino</td>
+                <td>Octavo</td>
                 <td><button>Actualizar</button> 
                   <button>Eliminar</button>
                 </button>
