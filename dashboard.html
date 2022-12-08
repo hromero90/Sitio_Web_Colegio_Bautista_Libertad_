@@ -295,9 +295,26 @@
                 <td>16</td>
                 <td>Femenino</td>
                 <td>Undécimo</td>
-                <td><button>Actualizar</button> 
-                  <button>Eliminar</button>
-                </button>
+                <td><button> 
+                  <span onclick="actualizar()">Actualizar</span>
+                  <script>
+                    function actualizar()
+                    {
+                      location.href = "dashbusqueda.html";
+                    }
+                    </script>
+                </button> 
+                
+                <button> 
+                  <span onclick="alerta()">Eliminar</span>
+                  <script>
+                    function alerta()
+                    {
+                    alert("Los datos seran eliminados");
+                    }
+                    </script>
+                </button> 
+                
               </td>
               </tr>
               
