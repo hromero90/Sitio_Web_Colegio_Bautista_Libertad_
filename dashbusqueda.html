@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sistema de Matricula Colegio Bautista Libertad</title>
+  <link rel="stylesheet" href="assets/css/styledash.css" />
+  <link rel="stylesheet" href="assets/css/style-search.css">
+  <!-- Font Awesome Cdn Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="#" class="logo">
+          <img src="assets/img/logo_cbl.png">
+          <span class="nav-item">Admin</span>
+        </a></li>
+        <li><a href="dashboard_docente.html">
+          <i class='fas fa-chalkboard-teacher'></i>
+          <span class="nav-item">Registrar Docente</span>
+        </a></li>
+        <li><a href="dashboard.html">          
+          <i class='fas fa-address-card'></i>
+          <span class="nav-item">Registrar Estudiante</span>
+        </a></li>
+        <li><a href="#">
+          <i class="fas fa-database"></i>
+          <span class="nav-item">Reportes</span>
+        </a></li>
+
+        <li><a href="#">
+          <i class='fas fa-search'></i>
+          <span class="nav-item">Busqueda</span>
+        </a></li>
+        
+
+        <li><a href="registro.html" class="logout">
+          <i class="fas fa-sign-out-alt"></i>
+          <span class="nav-item">Cerrar Sesión</span>
+        </a></li>
+      </ul>
+    </nav>
+
+    <section class="main">
+      <div class="main-top">
+        <h1>Busqueda de Estudiantes</h1>
+      </div>     
+      
+
+    <script src="script.js"></script>
+
+    <input type="text" name="buscador" id="buscador" placeholder="Buscar...">
+    
+    <!--Listado de Estudiantes Guardados-->
+      <section class="attendance">
+        <div class="attendance-list">
+          <h1>Resultados de la busqueda</h1>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Código Estudiante</th>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Edad</th>
+                <th>Sexo</th>
+                <th>Grado</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr  class="active">
+                <td>01 - AYBR</td>
+                <td>Ana Yancy</td>
+                <td>Bermúdez Ramos</td>
+                <td>14</td>
+                <td>Femenino</td>
+                <td>Séptimo</td>
+                <td><button>Actualizar</button> 
+                  <button>Eliminar</button>
+                </button>
+              </td>
+                
+              </tr>
+              <tr>
+                <td>02 - XDSM</td>
+                <td>Xochilt del Socorro</td>
+                <td>Silva Mora</td>
+                <td>14</td>
+                <td>Femenino</td>
+                <td>Octavo</td>
+                <td><button>Actualizar</button> 
+                  <button>Eliminar</button>
+                </button>
+              </td>
+              </tr>
+              
+              
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+  </div>
+
+</body>
+</html>
