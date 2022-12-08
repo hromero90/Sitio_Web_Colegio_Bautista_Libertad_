@@ -30,8 +30,8 @@
         </a></li>
 
         <li><a href="#">
-          <i class='fas fa-search'></i>
-          <span class="nav-item">Busqueda</span>
+          <i class='fas fa-user-edit'></i>
+          <span class="nav-item">Actualizar</span>
         </a></li>
         
 
@@ -44,77 +44,200 @@
 
     <section class="main">
       <div class="main-top">
-        <h1>Busqueda de Estudiantes</h1>
+        <h1>Actualizar Datos</h1>
       </div>     
       
 
     <script src="script.js"></script>
 
-    <input type="text" name="buscador" id="buscador" placeholder="Buscar...">
-    
-    <!--Listado de Estudiantes Guardados-->
-      <section class="attendance">
-        <div class="attendance-list">
-          <h1>Resultados de la busqueda</h1>
-          <table class="table">
-            <thead>
-              <tr>
-                <th>Código Estudiante</th>
-                <th>Nombres</th>
-                <th>Apellidos</th>
-                <th>Edad</th>
-                <th>Sexo</th>
-                <th>Grado</th>
-                <th>Acciones</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr  class="datos">
-                <td>01 - AYBR</td>
-                <td>Ana Yancy</td>
-                <td>Bermúdez Ramos</td>
-                <td>14</td>
-                <td>Femenino</td>
-                <td>Séptimo</td>
-                <td><button>Actualizar</button> 
-                  <button>Eliminar</button>
-                </button>
-              </td>
-                
-              </tr>
+    <div class="container-formulario">
+      <header>Actualice los datos que sean necesarios</header>
 
-              <tr class="datos">
-                <td>02 - XDSM</td>
-                <td>Xochilt del Socorro</td>
-                <td>Silva Mora</td>
-                <td>14</td>
-                <td>Femenino</td>
-                <td>Octavo</td>
-                <td><button>Actualizar</button> 
-                  <button>Eliminar</button>
-                </button>
-              </td>
-              </tr>
+      <form action="#">
+          <div class="form first">
+              <div class="details personal">
+                  <span class="title">Datos del Estudiante</span>
 
-              <tr class="datos">
-                <td>03 - HARE</td>
-                <td>Hector Antonio</td>
-                <td>Romero Estrada</td>
-                <td>15</td>
-                <td>Masculino</td>
-                <td>Octavo</td>
-                <td><button>Actualizar</button> 
-                  <button>Eliminar</button>
-                </button>
-              </td>
-              </tr>
-              
-              
-            </tbody>
-          </table>
-        </div>
-      </section>
-    </section>
+                  <div class="fields">
+                      <div class="input-field">
+                          <label>Nombres</label>
+                          <input type="text" placeholder="Ana Yancy" required>
+                      </div>
+
+                      <div class="input-field">
+                          <label>Apellidos</label>
+                          <input type="text" placeholder="Bermúdez Ramos" required>
+                      </div>
+
+                      <div class="input-field">
+                          <label>Edad</label>
+                          <input type="number" placeholder="14" required>
+                      </div>
+
+                      <div class="input-field">
+                          <label>Sexo</label>
+                          <select required>
+                              <option disabled selected>Seleccionar</option>
+                              <option>Masculino</option>
+                              <option>Femenino</option>
+                          </select>
+                      </div>
+
+                      <div class="input-field">
+                          <label>Grado</label>
+                          <select required>
+                              <option disabled selected>Seleccionar</option>
+                              <option>II Nivel</option>
+                              <option>III Nivel</option>
+                              <option>Primer Grado</option>
+                              <option>Segundo Grado</option>
+                              <option>Tercero Grado</option>
+                              <option>Cuarto Grado</option>
+                              <option>Quinto Grado</option>
+                              <option>Sexto Grado</option>
+                              <option>Septimo Grado</option>
+                              <option>Octavo Grado</option>
+                              <option>Noveno Grado</option>
+                              <option>Décimo Grado</option>
+                              <option>Undécimo Grado</option>
+
+                          </select>
+                      </div>
+
+                      <div class="input-field">
+                          <label>Dirección Domiciliar</label>
+                          <input type="text" placeholder="Dirección..." required>
+                      </div>
+
+                      <div class="input-field">
+                          <label>Teléfono</label>
+                          <input type="number" placeholder="Celular..." required>
+                      </div>
+
+                      <div class="input-field">
+                        <label>Código del Estudiante</label>
+                        <input type="number" placeholder="01-AYBR..." required>
+                    </div>
+
+                  </div>
+              </div>
+
+              <div class="details ID">
+                  <span class="title">Datos del Tutor</span>
+
+                  <div class="fields">
+                      <div class="input-field">
+                          <label>Nombres</label>
+                          <input type="text" placeholder="Nombres..." required>
+                      </div>
+
+                      <div class="input-field">
+                          <label>Apellidos</label>
+                          <input type="text" placeholder="Apellidos..." required>
+                      </div>
+
+                      <div class="input-field">
+                          <label>Cedula</label>
+                          <input type="text" placeholder="Cedula..." required>
+                      </div>
+
+                      <div class="input-field">
+                          <label>Dirección</label>
+                          <input type="text" placeholder="Dirección..." required>
+                      </div>
+
+                      <div class="input-field">
+                          <label>Telefono</label>
+                          <input type="number" placeholder="Telefono..." required>
+                      </div>
+
+                      <div class="input-field">
+                        <label>Parentesco</label>
+                        <input type="text" placeholder="Parentesco..." required>
+                    </div>
+                  </div>
+
+                  <button class="nextBtn">
+                      <span class="btnText">Siguiente =></span>
+                      <i class="uil uil-navigator"></i>
+                  </button>
+              </div> 
+          </div>
+
+
+          <div class="form second">
+              <div class="details address">
+                  <span class="title">Datos del Docente</span>
+
+                  <div class="input-field">
+                    <label>Docente</label>
+                    <select required>
+                        <option disabled selected>Seleccionar</option>
+                        <option>Juan Perez</option>
+                        <option>Juana Marenco</option>
+                        <option>Gabriel Hernández</option>
+                        <option>Pedro García</option>
+                        <option>Jennifer Pereira</option>
+                        <option>Maria Porta</option>
+                        <option>Esmeralda Carrion</option>
+                        <option>Valeska Parra</option>
+
+                    </select>
+                </div>
+
+
+              <div class="details family">
+                  <span class="title">Datos de Matricula</span>
+
+                  <div class="fields">
+                    <div class="input-field">
+                      <label>Repitente</label>
+                      <select required>
+                          <option disabled selected>Seleccionar</option>
+                          <option>Si</option>
+                          <option>No</option>
+                      </select>
+                  </div>
+
+                  <div class="input-field">
+                    <label>Nuevo Ingreso</label>
+                    <select required>
+                        <option disabled selected>Seleccionar</option>
+                        <option>Si</option>
+                        <option>No</option>
+                    </select>
+                </div>
+
+                      <div class="input-field">
+                        <label>Año Lectivo</label>
+                        <input type="number" placeholder="Año lectivo..." required>
+                    </div>
+
+                      
+                  </div>
+
+                  <div class="buttons">
+                      <div class="backBtn">
+                          <i class="uil uil-navigator"></i>
+                          <span class="btnText">Atras</span>
+                      </div>
+                      
+                      <button class="sumbit">
+                          <span onclick="mensaje()" class="btnText">Guardar</span>
+                          <script>
+                            function mensaje()
+                            {
+                              alert("Datos Guardados Correctamente");
+                            }
+                          </script>
+                          <i class="uil uil-navigator"></i>
+                      </button>
+                      
+                  </div>
+              </div> 
+          </div>
+      </form>
+  </div>
 
     <script src="assets/js/script_search.js"></script>
   </div>

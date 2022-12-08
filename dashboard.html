@@ -30,8 +30,8 @@
         </a></li>
 
         <li><a href="dashbusqueda.html">
-          <i class='fas fa-search'></i>
-          <span class="nav-item">Busqueda</span>
+          <i class='fas fa-user-edit'></i>
+          <span class="nav-item">Actualizar</span>
         </a></li>
         
 
@@ -267,9 +267,26 @@
                 <td>14</td>
                 <td>Femenino</td>
                 <td>Séptimo</td>
-                <td><button>Actualizar</button>
-                  <button>Eliminar</button>
-                </button>
+                <td><button> 
+                  <span onclick="actualizar()">Actualizar</span>
+                  <script>
+                    function actualizar()
+                    {
+                      location.href = "dashbusqueda.html";
+                    }
+                    </script>
+                </button> 
+                
+                <button> 
+                  <span onclick="alerta()">Eliminar</span>
+                  <script>
+                    function alerta()
+                    {
+                    alert("Los datos seran eliminados");
+                    }
+                    </script>
+                </button> 
+                
               </td>
                 
               </tr>
@@ -281,9 +298,26 @@
                 <td>14</td>
                 <td>Femenino</td>
                 <td>Octavo</td>
-                <td><button>Actualizar</button> 
-                  <button>Eliminar</button>
-                </button>
+                <td><button> 
+                  <span onclick="actualizar()">Actualizar</span>
+                  <script>
+                    function actualizar()
+                    {
+                      location.href = "dashbusqueda.html";
+                    }
+                    </script>
+                </button> 
+                
+                <button> 
+                  <span onclick="alerta()">Eliminar</span>
+                  <script>
+                    function alerta()
+                    {
+                    alert("Los datos seran eliminados");
+                    }
+                    </script>
+                </button> 
+                
               </td>
               </tr>
 
