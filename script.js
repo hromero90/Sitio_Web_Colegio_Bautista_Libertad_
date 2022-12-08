@@ -9,6 +9,7 @@ nextBtn.addEventListener("click", ()=> {
         if(input.value != ""){
             form.classList.add('secActive');
         }else{
+            
             form.classList.remove('secActive');
         }
     })
